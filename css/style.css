@@ -1,3 +1,36 @@
-/*font-family: 'Press Start 2P', cursive; 8px, 16px, 24px, 32px etc
-font-family: 'Bungee', cursive;
-font-family: 'Roboto', sans-serif;*/
+body {
+  background-color: #000;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: #83F52C;
+}
+
+h3 {
+  font-family: 'Bungee', cursive;
+}
+
+p,
+ol {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 50px 0;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px dashed white;
+  color: #FFF;
+}
+
+.btn:hover{
+  color: #83F52C;
+}
+
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 75px;
+}
