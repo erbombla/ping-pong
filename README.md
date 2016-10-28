@@ -10,11 +10,13 @@ _Specifications_
 * Numbers divisible by 3 are replaced with "ping"
 * Numbers divisible by 5 are replaced with "pong"
 * Numbers divisible by 15 (3 and 5) are replaced with "ping-pong"
+* Numbers divisible by 18 are replaced with "peppercorn ping-pong"
 
 _Inputs_-->_Outputs_
 * 3,6,9 --> ping
 * 5, 10, 20 --> pong
 * 15, 30, 45 --> ping-pong
+* 18, 54, 90 --> peppercorn ping-pong
 
 ## Setup/Installation Requirements
 * Clone this repository
