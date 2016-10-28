@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Press+Start+2P|Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/cc8e825d0d.js"></script>
     <title>Ping-Pong</title>
   </head>
   <body>
@@ -11,20 +12,22 @@
     <div class="container">
       <h1>PING-PONG</h1>
         <h3>Rules</h3>
-        <p>Ping-Pong counts up to a number with the following exceptions:</p>
+        <p>_Ping-Pong counts up to a number with the following exceptions:</p>
           <ol>
             <li>Numbers divisible by three become 'ping'</li>
             <li>Numbers divisible by five become 'pong'</li>
             <li>Numbers divisible by fifteen become 'ping-pong'</li>
             <li>Numbers divisible by eighteen return a surprise</li>
           </ol>
-        <form>
+        <form id ="pingPong">
           <div class="form-numbers">
             <label for="num">Enter a number</label>
-            <input type="number" name ="number" id="userInput">
+            <input type="number" id="userInput" class="form-control">
           </div>
           <br>
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn form-control">
+            PLAY
+          </button>
         </form>
           <div id="result">
             <h3>Result</h3>
