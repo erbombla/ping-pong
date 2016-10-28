@@ -4,8 +4,6 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Press+Start+2P|Roboto" rel="stylesheet">
-    <script src = "js/jquery-3.1.1.js" type="text/javascript"></script>
-    <script src = "js/script.js" type="text/javascript"></script>
     <title>Ping-Pong</title>
   </head>
   <body>
@@ -20,15 +18,15 @@
             <li>Numbers divisible by fifteen become 'ping-pong'</li>
             <li>Numbers divisible by eighteen return a surprise</li>
           </ol>
-        <form id="userInput">
+        <form>
           <div class="form-numbers">
             <label for="num">Enter a number</label>
-            <input type="number" name ="number" id="input">
+            <input type="number" name ="number" id="userInput">
           </div>
           <br>
           <button type="submit" class="btn">Submit</button>
         </form>
-          <div id="results">
+          <div id="result">
             <h3>Result</h3>
               <ul id="result-list">
                 <!--Result appears here-->
@@ -39,6 +37,8 @@
     <footer>
       <hr>
       <p>2016 &#169; By Eric Bomblatus / An Epicodus Project </p>
-    </footer
+    </footer>
+    <script src = "js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src = "js/script.js" type="text/javascript"></script>
   </body>
 </html>
