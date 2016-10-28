@@ -1,29 +1,29 @@
 //Business Logic
-var myNum = function(num) {
+
+//Setup empty array?
+
+function
   //for loop
-  for (num = 1; num <= input; num++) {
+  for (i = 1; i <= input; i++) {
     //conditional statements
-    if ((num % 3 === 0 && num % 5 === 0)) { //if num is divisible by 3 OR 5
-      "<b>PING-PONG</b>"
+    if ((i % 3 === 0 && num % 5 === 0)) { //if index is divisible by 3 OR 5
+      counter.push("<b>PING-PONG</b>");
     }
-    else if (num % 3 === 0) { //if num is divisible by 3
-      "<b>PING</b>"
+    else if (i % 3 === 0) { //if index is divisible by 3
+      counter.push("**PING**");
     }
-    else if (i % 5 === 0) { //if num is divisible by 5
-      "<b>PONG</b>"
+    else if (i % 5 === 0) { //if index is divisible by 5
+      counter.push("**PONG**");
     }
-    else if (i % 18 === 0) { //if num is divisible by 18
-      "<b>**PEPPERCORN PING-PONG**PEPPERCORN PING-PONG**PEPPERCORN PING-PONG**</b>"
+    else if (i % 18 === 0) { //if index is divisible by 18
+      counter.push("**PEPPERCORN PING-PONG**PEPPERCORN PING-PONG**");
     }
-  };
+  }
+};
 
 //User Interface Logic
 $(document).ready(function() {
   $("form#userInput").submit(function(event) {
     event.preventDefault();
-    var myNum = parseInt($("input#myNum").val());
-    var total = 0;
-    $("div#results").show();
-    $("ul#result-list").append("<li>" + total + "</li>");
   });
 });
