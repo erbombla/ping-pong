@@ -16,10 +16,15 @@ ol {
   font-family: 'Roboto', sans-serif;
 }
 
+ul {
+  font-family: 'Roboto', sans-serif;
+  list-style: none; 
+}
+
 footer {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  color: #FFF; 
+  color: #FFF;
 }
 
 .container {
