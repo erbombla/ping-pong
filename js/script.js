@@ -2,6 +2,7 @@
   var userInput = parseInt($("input#userInput").val());
   var arr = [];
   var total = 0;
+  var result = pingPong(userInput);
     //for loop
     for (var i = 1; i <= total; i++) {
       total += userInput;
@@ -28,6 +29,7 @@
     $("form#pingPong").submit(function(event) {
       event.preventDefault();
       $("div#result").show();
+      $("userInput"); 
       $("ul#result-list").append("<li>" + total + "</li>");
     });
   });
