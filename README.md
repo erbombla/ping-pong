@@ -40,10 +40,6 @@ This repository is written in:
 * JavaScript
 * jQuery
 
-## Link
-
-https://erbombla.github.io/ping-pong/
-
 ### License
 
 Copyright (c) 2016 **Eric Bomblatus**
