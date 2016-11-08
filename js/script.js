@@ -1,50 +1,31 @@
 //Buisness Interface Logic
 
-    //for loop
-    function pingPong(number) {
-        for (var i = 1; i <= total; i++) {
-          if(number % divs[i] === 0) {
-            return outputs[i];
-        }
+  var arr = [];
+  var pingPong = function(number) {
+    arr = [];
+      for (var i = 1; i <= number; i++) {
+        if (i % 15 === 0) {
+        arr.push("**PING-PONG**");
+      } else if (i % 3 === 0) {
+        arr.push("**PING**");
+      } else if (i % 5 === 0) {
+        arr.push("**PONG**");
+      } else if (i % 18 === 0) {
+        arr.push("**PEPPERCORN PING-PONG**PEPPERCORN PING-PONG**");
       }
-          //If not divisible
-            return number;
-              pingpong(90);
-              pingpong(45);
-              pingpong(10);
-              pingpong(6);
-        }
-
-  //     total += userInput;
-  //     //conditional statements
-  //     if ((i % 3 === 0 && i % 5 === 0)) { //if index is divisible by 3 OR 5
-  //       arr.push("**PING-PONG**"); //add message to the end
-  //     }
-  //     else if (i % 3 === 0) { //if index is divisible by 3
-  //       arr.push("**PING**");
-  //     }
-  //     else if (i % 5 === 0) { //if index is divisible by 5
-  //       arr.push("**PONG**");
-  //     }
-  //     else if (i % 18 === 0) { //if index is divisible by 18
-  //       arr.push("**PEPPERCORN PING-PONG**PEPPERCORN PING-PONG**");
-  //     }
-  //     else {
-  //       arr.push(i); //final result
-  //     }
-  // }
+    }
+    return arr;
+  }
 
   //User Interface Logic
   $(document).ready(function() {
     $("form#pingPong").submit(function(event) {
       event.preventDefault();
-      var divs = [18,15,5,3];
-      var outputs = ['peppercorn ping-pong', 'ping-pong', 'pong', 'ping'];
-      var number = ($("input#userInput").val());
-      var result = pingPong(number);
-
-      $("div#result").show();
-      // $("userInput");
-      // $("ul#result-list").append("<li>" + total + "</li>");
+      var userInput = parseInt($(input).val());
+      var result = pingPong(userInput);
+      var number = ($("input#number").val());
+      arr.forEach(function(number) {
+      $("ul").append("<li>" + number + "</li>");
+      });
     });
   });
