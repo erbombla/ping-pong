@@ -33,3 +33,20 @@
       $("ul#result-list").append("<li>" + total + "</li>");
     });
   });
+
+function pingPong(number) {
+  var divs = [18,15,5,3];
+  var outputs = ['peppercorn ping-pong', 'ping-pong', 'pong', 'ping']; 
+ 
+  for (var i = 1; i <= total; i++) {
+    if(number % divs[i] === 0) {
+      return outputs[i]; 
+    }
+  }
+  
+  //If not divisible return:
+  
+  pingpong(90);
+  pingpong(45);
+  pingpong(10);
+  pingpong(6);
