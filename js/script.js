@@ -1,6 +1,4 @@
 //Buisness Interface Logic
-
-  var arr = [];
   var pingPong = function(number) {
     arr = [];
       for (var i = 1; i <= number; i++) {
@@ -10,8 +8,8 @@
         arr.push("**PING**");
       } else if (i % 5 === 0) {
         arr.push("**PONG**");
-      } else if (i % 18 === 0) {
-        arr.push("**PEPPERCORN PING-PONG**PEPPERCORN PING-PONG**");
+      }  else {
+        arr.push(i)
       }
     }
     return arr;
@@ -25,7 +23,7 @@
       var result = pingPong(userInput);
       var number = ($("input#number").val());
       arr.forEach(function(number) {
-      $("ul").append("<li>" + number + "</li>");
+      $("ul#result-list").text(arr);                                                                                                                                            (number);
       });
     });
   });
