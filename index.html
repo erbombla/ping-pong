@@ -4,8 +4,9 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Press+Start+2P|Roboto" rel="stylesheet">
-    <script src = "js/jquery-3.1.1.js" type="text/javascript"></script>
-    <script src = "js/script.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src = type="text/javascript" "js/pingpong.js"></script>
+    <script type="text/javascript" src="js/pingpong-interface.js"></script>
     <title>Ping-Pong</title>
   </head>
   <body>
@@ -19,23 +20,15 @@
             <li>Numbers divisible by five become 'pong'</li>
             <li>Numbers divisible by fifteen become 'ping-pong'</li>
           </ol>
-        <form id ="pingPong">
-          <div class="form-numbers">
-            <h3>Enter a number</h3>
-              <input type="number" id="input"></input>
-          </div>
+        <form id ="ping-pong-form">
+          <label for="goal">Enter a number</label>
+          <input id="goal" type="number">
           <br>
-          <button type="submit" class="btn form-control">
-            PLAY
-          </button>
+          <button type="submit">PLAY</button>
         </form>
-        <div id="result">
-            <h3>Result</h3>
-              <ul id="result-list">
-                <!--Result appears here-->
-              </ul>
-        </div>
-      </div>
+          <ul id="solution"></ul>
+            <!--Result appears here-->
+    </div>
     <div class="bottom"></div>
     <footer>
       <hr>
