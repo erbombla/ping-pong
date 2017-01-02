@@ -1,6 +1,0 @@
-Eric, You are making progress on this! Here are some next steps to get your application working. Franz
--User input needs to be gathered in submit function. 
--Function needs to be called in business logic. Example is var result = pingPong(userInput). 
--The function in your business logic needs to be a named function with an argument. In other words var pingPong = function(parameter). 
--Scope variables to the function. 
--You can remove old output when a user inputs a new input by using a function like .remove() or .empty().

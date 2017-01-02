@@ -1,0 +1,27 @@
+{
+  "name": "ping-pong",
+  "version": "1.0.0",
+  "description": "#### Displays integers divisible by 3, 5 and 15 using a for loop, Oct.28,2016",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.9.4",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erbombla/ping-pong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erbombla/ping-pong/issues"
+  },
+  "homepage": "https://github.com/erbombla/ping-pong#readme"
+}
